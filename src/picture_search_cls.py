@@ -26,9 +26,9 @@ class PictureSearchCls:
                     filename = row[0],
                     type = row[1],
                     image_size = float(row[2]) if row[2] else None,
-                    image_x = int(row[3] if row[3] else None),
-                    image_y = int(row[4] if row[4] else None),
-                    dpi = int(row[5] if row[5] else None),
+                    image_x = int(row[3]) if row[3] else None,
+                    image_y = int(row[4]) if row[4] else None,
+                    dpi = int(row[5]) if row[5] else None,
                     
                     center_coordinate = self.transfer(cor),
                     favorite = row[7],
